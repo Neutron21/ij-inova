@@ -1,13 +1,11 @@
-<div class="content" role="main">
-  <app-navbar></app-navbar>
+<app-navbar></app-navbar>
+<div class="container" role="main">
+  
   <!-- Next Steps -->
-  <button type="button" class="btn btn-primary"(click)="throwDice()">Throw Dice</button>
-  <div>
-    <h4>{{dado1}}</h4>
-    <h4>{{dado2}}</h4>
-  </div>
+ <app-dice></app-dice>
+ <app-you-tube></app-you-tube>
   <!-- Footer -->
-
+  <router-outlet></router-outlet>
 </div>
 
-<router-outlet></router-outlet>
+

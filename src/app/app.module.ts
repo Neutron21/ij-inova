@@ -10,6 +10,7 @@ import { MapsComponent } from './maps/maps.component';
 import { YouTubeComponent } from './you-tube/you-tube.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { CountdownComponent } from './countdown/countdown.component';
+import { DiceComponent } from './dice/dice.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CountdownComponent } from './countdown/countdown.component';
     MapsComponent,
     YouTubeComponent,
     CarruselComponent,
-    CountdownComponent
+    CountdownComponent,
+    DiceComponent
   ],
   imports: [
     BrowserModule,
