@@ -1,0 +1,32 @@
+.loader-gift{
+    width: 7rem;
+}
+.vs{
+    padding: 1rem;
+    font-weight: 800;
+    font-size: 3rem;
+    background: -webkit-linear-gradient(to right, #d3c63c, #cd4132); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d3c63c, #cd4132); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+.fondo {
+    margin: 1rem;
+    border-radius: 30%;
+    background-color: black;
+}
+.emoji-result {
+    font-size: 4.8em;
+    padding-top: 1rem;
+}
+.left{
+    padding-right: .5em;
+}
+.right{
+    padding-left: .5em;
+}
+.form-switch{
+    padding-left: 3em;    
+}
