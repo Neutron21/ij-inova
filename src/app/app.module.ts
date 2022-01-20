@@ -11,6 +11,10 @@ import { YouTubeComponent } from './you-tube/you-tube.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { DiceComponent } from './dice/dice.component';
+import { QrComponent } from './qr/qr.component';
+import { ServiciosPageComponent } from './servicios-page/servicios-page.component';
+import { NosotrosPageComponent } from './nosotros-page/nosotros-page.component';
+import { EjemplosPageComponent } from './ejemplos-page/ejemplos-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { DiceComponent } from './dice/dice.component';
     YouTubeComponent,
     CarruselComponent,
     CountdownComponent,
-    DiceComponent
+    DiceComponent,
+    QrComponent,
+    ServiciosPageComponent,
+    NosotrosPageComponent,
+    EjemplosPageComponent
   ],
   imports: [
     BrowserModule,

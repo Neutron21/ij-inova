@@ -1,0 +1,10 @@
+{
+    "name": "English language",
+    "component": [
+        {
+            "title": "QR",
+            "subtitle": "Try QR",
+            "text1": "Scan the code"
+        }
+    ]
+}

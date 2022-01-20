@@ -30,3 +30,7 @@
 .form-switch{
     padding-left: 3em;    
 }
+.border{
+    border-width: medium;
+    border-radius: 30%;
+}

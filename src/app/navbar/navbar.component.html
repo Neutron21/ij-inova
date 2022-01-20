@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Ij Inovaciones</a>
+      <a class="navbar-brand" routerLink="">Ij Inovaciones</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -13,15 +13,15 @@
             <a class="nav-link" href="#">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Ejemplos</a>
+            <a class="nav-link" routerLink="Ejemplos">Ejemplos</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Idioma
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Español 🇲🇽</a></li>
-              <li><a class="dropdown-item" href="#">Ingles 🇺🇸</a></li>
+              <li><a class="dropdown-item" href="#" (click)="changeLanguage('es')">Español 🇲🇽</a></li>
+              <li><a class="dropdown-item" href="#" (click)="changeLanguage('en')">Ingles 🇺🇸</a></li>
             </ul>
           </li>
         </ul>
