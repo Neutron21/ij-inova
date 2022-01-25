@@ -1,8 +1,5 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { GeneralValuesServices } from '../services/general_values.services';
-import es from '../../assets/language/language_es.json';
-import en from '../../assets/language/language_en.json';
-
 
 
 @Component({
@@ -12,34 +9,31 @@ import en from '../../assets/language/language_en.json';
 })
 export class QrComponent implements OnInit, OnChanges {
 
-  @Input() idioma: String = "es";
-  title: String = "";
-  subtitle: String = "";
-  
+  labels: String[] = [];
+  idiom: String = "es";
   constructor(
     private _generalValuesServices: GeneralValuesServices
-  ) { }
+  ) { 
+    this._generalValuesServices.language$.subscribe( res => {
+      this.idiom = res;
+      console.log(this.idiom);
+      this.getLanguage(this.idiom)
+    })
+  }
   
   ngOnInit(): void {
     
-    console.log('props', this);
-    this.getLanguage();    
+    this.getLanguage(this.idiom);    
    
   }
   ngOnChanges(changes: SimpleChanges): void {
     console.log('changes', changes);
-    this.getLanguage();
+    this.getLanguage(this.idiom);
     
   }
-  getLanguage(){
-   if (this.idioma == 'es') {
-     this.title = es.component[0].title;
-     this.subtitle = es.component[0].subtitle;
-   } else {
-    this.title = en.component[0].title;
-    this.subtitle = en.component[0].subtitle;
-   }
+  getLanguage(lenguaje){
     
+    this.labels = this._generalValuesServices.getLabels("qr",lenguaje);   
   }
  
 }

@@ -1,10 +1,63 @@
 {
     "name": "idioma Español",
-    "component": [
-        {
-            "title": "QR",
-            "subtitle": "Prueba un QR",
-            "text1": "Escanea el código"
-        }
+    "navbar": [
+        "IJ Innovaciones",
+        "Servicios",
+        "Nosotros",
+        "Ejemplos",
+        "Idioma",
+        "Español",
+        "Ingles"
+    ],
+    "qr": [
+        "Implementación de QR",
+        "Prueba un QR",
+        "Escanea el codigo"
+    ],
+    "carrusel": [
+        "Carrusel",
+        "Agrega estilo e inovación en tus fotos"
+    ],
+    "p-p-t": [
+        "Piedra, papel o tijera 👊🏼 ✋🏼 ✌🏼",
+        "Juagalo con un amigo o contra el CPU",
+        "Un Jugador",
+        "Dos Jugadores",
+        "Jugar",
+        "Jugador 2",
+        "Jugador 1",
+        "J1",
+        "J2",
+        "IA",
+        "Piedra",
+        "Papel",
+        "Tijera",
+        "Empate, intenta de nuevo.",
+        "Jugador 1 gana!",
+        "Tu ganas!",
+        "Jugador 2 gana!",
+        "Perdiste"
+    ],
+    "dice": [
+        "Lanza los datos",
+        "Prueba tu suerte"
+    ],
+    "you-tube": [
+        "Videos de YouTube",
+        "Aqui puedes anunciar tus productos de una forma mas creativa",
+        "Ver otro ejemplo",
+        "Muestra tus prodcutos o servicios"
+    ],
+    "maps": [
+        "Mapa",
+        "Agrega la ubicación de tu negocio, para obtener mas clientes"
+    ],
+    "countdown": [
+        "Cuenta regresiva",
+        "Sabemos que las grandes ofertas y promociones no son permanentes",
+        "Días",
+        "Horas",
+        "Minutos",
+        "Segundos"
     ]
 }

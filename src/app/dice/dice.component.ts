@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneralValuesServices } from '../services/general_values.services';
 
 @Component({
   selector: 'app-dice',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dice.component.css']
 })
 export class DiceComponent implements OnInit {
+
+  labels: String[] = [];
+  idiom: String = "es";
 
   title = 'ij-inova';
   dado1: any = 0;
@@ -17,7 +21,14 @@ export class DiceComponent implements OnInit {
   showGift = false;
   // diceMp3 = '../../assets/diceSound.mp3';
 
-  constructor() { 
+  constructor(
+    private _generalValuesServices: GeneralValuesServices
+  ) { 
+    this._generalValuesServices.language$.subscribe( res => {
+      this.idiom = res;
+      console.log(this.idiom);
+      this.getLanguage(this.idiom)
+    })
     this.dado1 = Math.floor(Math.random() * (this.max - this.min)) + this.min;
     this.dado2 = Math.floor(Math.random() * (this.max - this.min)) + this.min;
     this.pathDado1 = `../..assets/dado${this.dado1}`;
@@ -43,5 +54,8 @@ export class DiceComponent implements OnInit {
   reproducir() {
     const diceMp3 = new Audio('../../assets/diceSound.mp3');
     diceMp3.play();
-}
+  }
+  getLanguage(lenguaje){
+    this.labels = this._generalValuesServices.getLabels("dice",lenguaje);   
+  }
 }

@@ -15,6 +15,7 @@ import { QrComponent } from './qr/qr.component';
 import { ServiciosPageComponent } from './servicios-page/servicios-page.component';
 import { NosotrosPageComponent } from './nosotros-page/nosotros-page.component';
 import { EjemplosPageComponent } from './ejemplos-page/ejemplos-page.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { EjemplosPageComponent } from './ejemplos-page/ejemplos-page.component';
     QrComponent,
     ServiciosPageComponent,
     NosotrosPageComponent,
-    EjemplosPageComponent
+    EjemplosPageComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,63 @@
 {
     "name": "English language",
-    "component": [
-        {
-            "title": "QR",
-            "subtitle": "Try QR",
-            "text1": "Scan the code"
-        }
+    "navbar": [
+        "IJ Innovations",
+        "Services",
+        "About Us",
+        "Examples",
+        "Language",
+        "Spanish",
+        "English"
+    ],
+    "qr": [
+        "QR implementation",
+        "Try QR",
+        "Scan the code"
+    ],
+    "carrusel": [
+        "Carousel",
+        "Add style and innovation in your photos"
+    ],
+    "p-p-t": [
+        "Rock, paper or scissors 👊🏼 ✋🏼 ✌🏼",
+        "Play with a friend or against the CPU.",
+        "One Player",
+        "Two Players",
+        "Play",
+        "Player 2",
+        "Player 1",
+        "P1",
+        "P2",
+        "AI",
+        "Rock",
+        "Paper",
+        "Scissors",
+        "Tie, try again.",
+        "Player 1 win!",
+        "You win!",
+        "Player 2 win!",
+        "You lose"
+    ],
+    "dice": [
+        "Throw dice",
+        "Try your luck"
+    ],
+    "you-tube": [
+        "YouTube videos",
+        "Here you can advertise your products in a more creative way",
+        "See another example",
+        "Show your prodcuts or services"
+    ],
+    "maps": [
+        "Map",
+        "Add the location of your business, to get more customers"
+    ],
+    "countdown": [
+        "Countdown",
+        "We know that great offers and promotions are not permanent",
+        "Days",
+        "Hours",
+        "Minutes",
+        "Seconds"
     ]
 }
