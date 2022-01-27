@@ -26,8 +26,6 @@ export class CarruselComponent implements OnInit {
 
   getLanguage(lenguaje){
     
-    this.labels = this._generalValuesServices.getLabels("carrusel",lenguaje)
-    console.log(this.labels);
-   
+    this.labels = this._generalValuesServices.getLabels("carrusel",lenguaje);
   }
 }

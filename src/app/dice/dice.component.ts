@@ -27,7 +27,7 @@ export class DiceComponent implements OnInit {
     this._generalValuesServices.language$.subscribe( res => {
       this.idiom = res;
       console.log(this.idiom);
-      this.getLanguage(this.idiom)
+      this.getLanguage(this.idiom);
     })
     this.dado1 = Math.floor(Math.random() * (this.max - this.min)) + this.min;
     this.dado2 = Math.floor(Math.random() * (this.max - this.min)) + this.min;
@@ -36,6 +36,7 @@ export class DiceComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getLanguage(this.idiom);
   }
 
   throwDice(){

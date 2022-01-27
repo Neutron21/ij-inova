@@ -1,32 +1,48 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { GeneralValuesServices } from '../services/general_values.services';
 
 @Component({
   selector: 'app-piedra-papel-tijera',
   templateUrl: './piedra-papel-tijera.component.html',
   styleUrls: ['./piedra-papel-tijera.component.css']
 })
-export class PiedraPapelTijeraComponent implements OnInit {
+export class PiedraPapelTijeraComponent implements OnInit,OnChanges {
+
+  labels: String[] = [];
+  idiom: String = "es";
 
   number1: number = 0;
   number2: number = 0;
-  hand1: string = "";
-  hand2: string = "";
+  hand1: String = "";
+  hand2: String = "";
   max = 4;
   min = 1;
   showResult = false;
   loader = false;
   showEmojis = true;
-  result: string = "";
+  result: String = "";
   twoPlayer = false;
-  player2: string = "IA"
+  player2: String = "IA"
   btn1Active = false; 
   btn2Active = true; 
 
-  constructor() { 
-    
+  constructor(
+    private _generalValuesServices: GeneralValuesServices
+  ) { 
+    this._generalValuesServices.language$.subscribe( res => {
+      this.idiom = res;
+      console.log(this.idiom);
+      this.getLanguage(this.idiom);
+    })
   }
 
   ngOnInit(): void {
+    this.getLanguage(this.idiom);   
+  }
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log('changes', changes);
+    this.getLanguage(this.idiom);
+    
   }
 
   play(){
@@ -48,16 +64,16 @@ export class PiedraPapelTijeraComponent implements OnInit {
   }
 
   showHand(player: number){
-    let hand = "";
+    let hand: String = "";
     switch (player) {
       case 1:
-        hand = "Piedra";
+        hand = this.labels[10];
         break;
       case 2:
-        hand = "Papel";
+        hand = this.labels[11];
         break;
       case 3:
-        hand = "Tijera";
+        hand = this.labels[12];
         break;
       default:
         hand = "?"
@@ -68,28 +84,30 @@ export class PiedraPapelTijeraComponent implements OnInit {
 
   eval(){
     if (this.hand1 === this.hand2) {
-      this.result = "Empate, intenta de nuevo."
+      this.result = this.labels[13];
     } else {
-      if ((this.hand1 == "Piedra" && this.hand2 == "Tijera" ) ||
-          (this.hand1 == "Papel" && this.hand2 == "Piedra" ) || 
-          (this.hand1 == "Tijera" && this.hand2 == "Papel" )){
-        this.result = this.twoPlayer ? "Jugador 1 gana!" : "Tu ganas!";
+      if ((this.hand1 == this.labels[10] && this.hand2 == this.labels[12] ) ||
+          (this.hand1 == this.labels[11] && this.hand2 == this.labels[10] ) || 
+          (this.hand1 == this.labels[12] && this.hand2 == this.labels[11] )){
+        this.result = this.twoPlayer ? this.labels[14] : this.labels[15];
       }
-      if ((this.hand1 == "Piedra" && this.hand2 == "Papel") || 
-          (this.hand1 == "Papel" && this.hand2 == "Tijera" ) ||
-          (this.hand1 == "Tijera" && this.hand2 == "Piedra" )) {
-            this.result = this.twoPlayer ? "Jugador 2 gana!" : "Perdiste";
+      if ((this.hand1 == this.labels[10] && this.hand2 == this.labels[11]) || 
+          (this.hand1 == this.labels[11] && this.hand2 == this.labels[12] ) ||
+          (this.hand1 == this.labels[12] && this.hand2 == this.labels[10] )) {
+            this.result = this.twoPlayer ? this.labels[16] : this.labels[17];
       }
     }
   }
   twoPlayerOrCPU(){
   
     this.twoPlayer = !this.twoPlayer;
-    this.player2 = this.twoPlayer ? "P2" : "IA";
+   
+    this.player2 = this.twoPlayer ? this.labels[8] : this.labels[9];   
     this.btn1Active = this.twoPlayer ? false : true;
     this.btn2Active = this.twoPlayer ? true : false;
     this.hand1 = "";
     this.hand2 = "";
+    this.result = "";
    
   }
 
@@ -115,6 +133,7 @@ export class PiedraPapelTijeraComponent implements OnInit {
 
   player2Throw(){
 
+    this.btn2Active = true;
     this.showResult = false;
     this.showEmojis = false;
     this.loader = true;
@@ -130,5 +149,13 @@ export class PiedraPapelTijeraComponent implements OnInit {
       this.btn2Active = true;
       this.btn1Active = false;
     }, 1500);
+  }
+  getLanguage(lenguaje){
+    
+    this.labels = this._generalValuesServices.getLabels("p-p-t",lenguaje);   
+    this.hand1 = this.showHand(this.number1);
+    this.hand2 = this.showHand(this.number2);
+    this.eval();
+    
   }
 }

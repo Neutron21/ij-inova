@@ -1,34 +1,37 @@
-<h2>Piedra, papel o tijera 👊🏼 ✋🏼 ✌🏼</h2>
-<p>Juagalo con un amigo o contra el CPU</p>
+<h2>{{labels[0]}}</h2>
+<p>{{labels[1]}}</p>
 
 <div class="d-flex justify-content-center pb-2">
-    <label class="form-check-label" for="flexSwitchCheckChecked">Un Jugador</label>
+    <label class="form-check-label" for="flexSwitchCheckChecked">{{labels[2]}}</label>
     <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
             [checked]="twoPlayer" (change)="twoPlayerOrCPU()">
-        <label class="form-check-label" for="flexSwitchCheckChecked">Dos Jugadores</label>
+        <label class="form-check-label" for="flexSwitchCheckChecked">{{labels[3]}}</label>
     </div>
     
 </div>
 <div *ngIf="!twoPlayer && !loader" class="d-flex justify-content-center">
-    <button class="btn btn-primary" (click)="play()">Jugar</button>
+    <button class="btn btn-primary" (click)="play()">{{labels[4]}}</button>
 </div>
 <div *ngIf="twoPlayer" class="d-flex justify-content-evenly">
-    <button class="btn btn-primary" (click)="player1Throw()" [disabled]="btn1Active">Jugador 1</button>
-    <button class="btn btn-primary" (click)="player2Throw()" [disabled]="btn2Active">Jugador 2</button>
+    <button class="btn btn-primary" (click)="player1Throw()" [disabled]="btn1Active">{{labels[5]}}</button>
+    <button class="btn btn-primary" (click)="player2Throw()" [disabled]="btn2Active">{{labels[6]}}</button>
 </div>
 <div *ngIf="loader" class="d-flex justify-content-center">
     <img src="../../assets/loader_150x150.gif" class="img-thumbnail loader-gift" alt="loader"/>
 </div>
 <div *ngIf="showEmojis" class="d-flex justify-content-center">
     <div class="emoji-resul">
-        P1
+        {{labels[7]}}
     </div>
     <div class="emoji-result" [ngSwitch]="hand1">
         <pre *ngSwitchDefault>❓</pre>
         <pre *ngSwitchCase="'Piedra'">👊🏼</pre>
+        <pre *ngSwitchCase="'Rock'">👊🏼</pre>
         <pre *ngSwitchCase="'Papel'">✋🏼</pre>
+        <pre *ngSwitchCase="'Paper'">✋🏼</pre>
         <pre *ngSwitchCase="'Tijera'">✌🏼</pre>
+        <pre *ngSwitchCase="'Scissors'">✌🏼</pre>
     </div>
     
     <div class="fondo">
@@ -37,8 +40,11 @@
     <div class="emoji-result" [ngSwitch]="hand2">
         <pre *ngSwitchDefault>❓</pre>
         <pre *ngSwitchCase="'Piedra'">👊🏼</pre>
+        <pre *ngSwitchCase="'Rock'">👊🏼</pre>
         <pre *ngSwitchCase="'Papel'">✋🏼</pre>
+        <pre *ngSwitchCase="'Paper'">✋🏼</pre>
         <pre *ngSwitchCase="'Tijera'">✌🏼</pre>
+        <pre *ngSwitchCase="'Scissors'">✌🏼</pre>
     </div>
     <div class="emoji-resul">
         {{player2}}

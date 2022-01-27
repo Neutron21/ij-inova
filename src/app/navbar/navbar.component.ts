@@ -19,20 +19,13 @@ export class NavbarComponent implements OnInit, OnChanges {
   ) { }
 
   ngOnInit(): void {
-    
     this.setLanguage();
-    
   }
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('changes', changes);
     this.setLanguage();
-    
   }
   changeLanguage(idiom: string){
-    console.log(idiom);
     this._generalValuesServices.language$.emit(idiom);
-    console.log(this);
-    
   }
   setLanguage(){
     this.labels = [];

@@ -22,7 +22,6 @@ export class QrComponent implements OnInit, OnChanges {
   }
   
   ngOnInit(): void {
-    
     this.getLanguage(this.idiom);    
    
   }
