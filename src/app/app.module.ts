@@ -16,6 +16,7 @@ import { ServiciosPageComponent } from './servicios-page/servicios-page.componen
 import { NosotrosPageComponent } from './nosotros-page/nosotros-page.component';
 import { EjemplosPageComponent } from './ejemplos-page/ejemplos-page.component';
 import { MainComponent } from './main/main.component';
+import { WpButtomComponent } from './wp-buttom/wp-buttom.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MainComponent } from './main/main.component';
     ServiciosPageComponent,
     NosotrosPageComponent,
     EjemplosPageComponent,
-    MainComponent
+    MainComponent,
+    WpButtomComponent
   ],
   imports: [
     BrowserModule,

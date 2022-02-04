@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { GeneralValuesServices } from '../services/general_values.services';
+import * as $ from 'jquery';
 import es from '../../assets/language/language_es.json';
 import en from '../../assets/language/language_en.json';
 
@@ -26,6 +27,7 @@ export class NavbarComponent implements OnInit, OnChanges {
   }
   changeLanguage(idiom: string){
     this._generalValuesServices.language$.emit(idiom);
+    this.hideMenu();
   }
   setLanguage(){
     this.labels = [];
@@ -40,4 +42,7 @@ export class NavbarComponent implements OnInit, OnChanges {
     }
      
    }
+   hideMenu() {
+    $("#navbarNavDropdown").removeClass("show")
+  }
 }

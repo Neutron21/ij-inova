@@ -1,27 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="">{{labels[0]}}</a>
+      <a class="navbar-brand font-color" (click)="hideMenu()" routerLink="">{{labels[0]}}</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" routerLink="Servicios"aria-current="page" href="#">{{labels[1]}}</a>
+            <a class="nav-link font-color" routerLink="Servicios"aria-current="page" href="#" (click)="hideMenu()">{{labels[1]}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="Nosotros" href="#">{{labels[2]}}</a>
+            <a class="nav-link font-color" routerLink="Nosotros" href="#" (click)="hideMenu()">{{labels[2]}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="Ejemplos">{{labels[3]}}</a>
+            <a class="nav-link font-color" routerLink="Ejemplos" (click)="hideMenu()">{{labels[3]}}</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle font-color" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{labels[4]}}
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" (click)="changeLanguage('es')">{{labels[5]}} 🇲🇽</a></li>
-              <li><a class="dropdown-item" (click)="changeLanguage('en')">{{labels[6]}} 🇺🇸</a></li>
+              <li><a class="dropdown-item font-color" (click)="changeLanguage('es')">{{labels[5]}} 🇲🇽</a></li>
+              <li><a class="dropdown-item font-color" (click)="changeLanguage('en')">{{labels[6]}} 🇺🇸</a></li>
             </ul>
           </li>
         </ul>

@@ -1,5 +1,11 @@
 .aux{
-    padding-top: 4rem;
+    padding-top: 3rem;
+}
+.container{
+    background-color: azure;
+    color: #123f54;
+    
+    padding-top: 1em;
 }
 .color1 {color: #12192a;}
 .color2 {color: #123f54;}

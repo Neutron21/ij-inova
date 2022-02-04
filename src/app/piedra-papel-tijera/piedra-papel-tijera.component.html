@@ -1,6 +1,6 @@
 <h2>{{labels[0]}}</h2>
 <p>{{labels[1]}}</p>
-
+<div id="ppt-compt">
 <div class="d-flex justify-content-center pb-2">
     <label class="form-check-label" for="flexSwitchCheckChecked">{{labels[2]}}</label>
     <div class="form-check form-switch">
@@ -17,7 +17,7 @@
     <button class="btn btn-primary" (click)="player1Throw()" [disabled]="btn1Active">{{labels[5]}}</button>
     <button class="btn btn-primary" (click)="player2Throw()" [disabled]="btn2Active">{{labels[6]}}</button>
 </div>
-<div *ngIf="loader" class="d-flex justify-content-center">
+<div *ngIf="loader" class="d-flex justify-content-center loader">
     <img src="../../assets/loader_150x150.gif" class="img-thumbnail loader-gift" alt="loader"/>
 </div>
 <div *ngIf="showEmojis" class="d-flex justify-content-center">
@@ -57,4 +57,4 @@
 <div *ngIf="showResult" class="d-flex justify-content-center">
     {{result}}
 </div>
-    
+</div>

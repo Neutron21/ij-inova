@@ -2,4 +2,34 @@
     z-index: 1;
     position: fixed;
     width: -webkit-fill-available;
+    background-color: #12192a;
+    
+}
+.navbar-toggler{
+    border-color: #20dad8;
+    border-width: 2px;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* width: 1.7em; */
+}
+.navbar-toggler-icon{
+    background-image: url("../../assets/menu.svg");
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.navbar-toggler-icon, .font-color{
+    color: #20dad8 !important;
+}
+.dropdown-menu{
+   background-color: #146d89;
+}
+.dropdown-item:hover{
+    background-color: #12192a;
+    /* color: #146d89 !important; */
+    color: #20dad8;
 }

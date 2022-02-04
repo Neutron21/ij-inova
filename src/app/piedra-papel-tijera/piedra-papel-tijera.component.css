@@ -34,3 +34,9 @@
     border-width: medium;
     border-radius: 30%;
 }
+.loader{
+    margin-top: 2em;
+}
+#ppt-compt{
+    height: 17em;
+}
