@@ -17,6 +17,7 @@ import { NosotrosPageComponent } from './nosotros-page/nosotros-page.component';
 import { EjemplosPageComponent } from './ejemplos-page/ejemplos-page.component';
 import { MainComponent } from './main/main.component';
 import { WpButtomComponent } from './wp-buttom/wp-buttom.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { WpButtomComponent } from './wp-buttom/wp-buttom.component';
     NosotrosPageComponent,
     EjemplosPageComponent,
     MainComponent,
-    WpButtomComponent
+    WpButtomComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
