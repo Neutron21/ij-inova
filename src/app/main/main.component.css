@@ -19,9 +19,26 @@ p {
     color: #123f54;
     min-height: 85vh;
     padding-top: 1em;
+    padding-bottom: 1em;
+}
+#logo{
+	width: 25em;
+}
+.rounded-custom{
+	
+	border-radius: 1em;
+	border-color: #123f54;
+	border-width: 2px;
+	border-style: solid;
 }
 @media (max-width: 800px) {
 	.sabias-img{
 		width: 100%;
+	}
+	.p-3{
+		padding: 1em 0px 1em 0px !important;
+	}
+	#logo{
+		width: 18em;
 	}
 }

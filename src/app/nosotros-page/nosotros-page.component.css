@@ -21,17 +21,29 @@ p {
 .pad-aux{
     padding-top: 1rem;
 }
+.container{
+    background-color: azure;
+    color: #123f54;
+    padding-top: 1em;
+}
+.container-2{
+    background-color: #123f54;
+    color: #20dad8;
+    /* padding-top: 1em; */
+    min-height: 4rem;
+}
 .background{
     background-image: url('../../assets/back2.JPG');
-    height: auto;
-    width: 100%;
-   
+    background-repeat: none;
+    background-size: 100%;
 }
 .gx-5{
     height: 11rem;
     margin-top: 1rem;
 }
-
+.azure{
+    color: azure;
+}
 @media (max-width: 800px) {
 	.pad-aux{
         padding-top: 0rem;
@@ -46,7 +58,7 @@ p {
         --bs-gutter-x: 2rem;
         height: 9rem;
     }
-    .background{
-        /* height: 40vh; */
-    }
+   .container-3{
+       margin-top: -1em;
+   }
 }

@@ -3,7 +3,8 @@
     position: fixed;
     width: -webkit-fill-available;
     background-color: #12192a;
-    
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
 }
 .navbar-toggler{
     border-color: #20dad8;
@@ -32,4 +33,12 @@
     background-color: #12192a;
     /* color: #146d89 !important; */
     color: #20dad8;
+}
+
+@media (max-width: 800px) {
+    .navbar{
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
 }
