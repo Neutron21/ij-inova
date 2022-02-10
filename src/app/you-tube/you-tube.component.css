@@ -4,3 +4,36 @@
 .azure{
     color: azure;
 }
+.btn-custom{
+    /* /* background-color: #20dad8; */
+    color: #146d89; 
+    /* background-color: #146d89; */
+    background-color: azure;   
+    box-shadow: #20dad8 0px 5px, #1da8c5 0px 10px, #146d89 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+.modal-header{
+    background-color: #123f54;
+}
+.modal-body{
+    background-color: azure;
+}
+.btn-close-x{
+    margin-bottom: 0.5rem;
+    color: #20dad8;
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em 0.25em;
+    border: 0;
+    border-radius: 0.25rem;
+    background-color: #123f54;
+}
+.fa-xmark{
+    font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+    h5{
+        font-size: 1.1rem;
+    }
+        
+}

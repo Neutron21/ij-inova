@@ -10,4 +10,8 @@ h2, h4{
     width: 0.9em;
     margin-right: 5px;
     padding-bottom: 2px;
+    --fa-flip-x: 1; --fa-flip-y: 0;
+}
+.fa-flip{
+    z-index: 0 !important;
 }

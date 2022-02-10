@@ -1,10 +1,11 @@
 .navbar{
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     width: -webkit-fill-available;
     background-color: #12192a;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 500;
+    box-shadow: #1da8c5 3px 1.5px 2px 
 }
 .navbar-toggler{
     border-color: #20dad8;

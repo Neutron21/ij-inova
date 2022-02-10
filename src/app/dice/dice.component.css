@@ -18,3 +18,10 @@
 .img-thumbnail{
     max-width: 45% !important;
 }
+.btn-custom{
+    background-color: #1da8c5;
+    color: #12192a;
+}
+.btn-custom:hover{
+    background-color: #20dad8;
+}

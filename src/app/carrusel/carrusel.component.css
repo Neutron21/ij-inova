@@ -7,3 +7,8 @@
 .font-black{
     color: black;
 }
+@media (max-width: 760px) {
+    .carousel{
+        width: 95%;
+    }   
+}

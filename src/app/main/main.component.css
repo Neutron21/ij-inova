@@ -22,23 +22,26 @@ p {
     padding-bottom: 1em;
 }
 #logo{
-	width: 25em;
+	width: 100%;
+	height: auto;
+	border-radius: 15%;
 }
 .rounded-custom{
-	
+	background-color: white;
 	border-radius: 1em;
 	border-color: #123f54;
 	border-width: 2px;
 	border-style: solid;
+	box-shadow: gray 3px 3px 3px;
 }
-@media (max-width: 800px) {
+@media (max-width: 760px) {
 	.sabias-img{
 		width: 100%;
 	}
 	.p-3{
 		padding: 1em 0px 1em 0px !important;
 	}
-	#logo{
-		width: 18em;
-	}
+	/* #logo{
+		width: 80%;
+	} */
 }
