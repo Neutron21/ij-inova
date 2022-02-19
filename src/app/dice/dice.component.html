@@ -1,14 +1,15 @@
+<div class="cmpt-body">
 <h2>{{labels[0]}}</h2>
 <p>{{labels[1]}}</p>
 <div class="d-flex justify-content-center">
     <button type="button" class="btn btn-custom" (click)="throwDice()">{{labels[0]}}</button>
 </div>
 <div class="d-flex justify-content-center">...</div>
-<div *ngIf="showGift" class="d-flex justify-content-center">
+<div *ngIf="showGift" class="d-flex justify-content-center imgs">
     <img src="../../assets/dado-1.gif" class="img-thumbnail dice dice-gift" alt="gift1"/>
     <img src="../../assets/dado-2.gif" class="img-thumbnail dice dice-gift" alt="gift2"/>
 </div>
-<div *ngIf="!showGift" class="d-flex justify-content-center">
+<div *ngIf="!showGift" class="d-flex justify-content-center imgs">
     <img src='../../assets/dado{{dado1}}.png' class="img-thumbnail dice" alt="{{dado1}}"/>  
     <img src='../../assets/dado{{dado2}}.png' class="img-thumbnail dice" alt="{{dado2}}"/>  
 </div>
@@ -25,4 +26,5 @@
         </div>
     </div>
     <div class="col"></div>
+</div>
 </div>

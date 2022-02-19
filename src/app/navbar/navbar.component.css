@@ -1,5 +1,5 @@
 .navbar{
-    z-index: 3;
+    z-index: 300;
     position: fixed;
     width: -webkit-fill-available;
     background-color: #12192a;

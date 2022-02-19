@@ -6,4 +6,33 @@ p {
     color: #123f54;
     min-height: 85vh;
     padding-top: 1em;
+    padding-bottom: 1em;
 }
+.call{
+    padding: 1rem;
+    background-color: #20dad8;
+    /* background-color: #123f54; */
+    border-radius: 50%;
+    color: #123f54;
+    /* color: #20dad8; */
+    width: 3.5rem;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    
+    .call{
+        width: 100%;
+    }
+     .call-mobile{
+        background-color: #20dad8;
+        border-radius: 10px;
+        /* margin-bottom: 3rem; */
+    }
+    
+}
+/* @media (max-height: 800px) {
+    .container{
+        min-height: 100vh;
+    }
+} */

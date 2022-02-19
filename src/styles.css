@@ -15,3 +15,6 @@ h2, h4{
 .fa-flip{
     z-index: 0 !important;
 }
+.cmpt-body{
+    padding-bottom: 3rem;
+}

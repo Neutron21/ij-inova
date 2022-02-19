@@ -33,7 +33,7 @@ p {
     min-height: 4rem;
 }
 .background{
-    background-image: url('../../assets/back2.JPG');
+    /* background-image: url('../../assets/back2.JPG'); */
     background-repeat: none;
     background-size: 100%;
 }

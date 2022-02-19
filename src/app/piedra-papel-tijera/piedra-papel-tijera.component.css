@@ -1,5 +1,8 @@
 .loader-gift{
     width: 7rem;
+    border: 2px solid #dee2e6;
+    border-radius: 50%;
+    padding: 0.25rem;
 }
 .vs{
     padding: 1rem;
@@ -43,6 +46,7 @@
 .btn-custom{
     background-color: #1da8c5;
     color: #12192a;
+    box-shadow: #12192a 1px 1px 3px;
 }
 .btn-custom:hover{
     background-color: #20dad8;

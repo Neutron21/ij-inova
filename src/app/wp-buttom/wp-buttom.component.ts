@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WpButtomComponent implements OnInit {
 
-  url = "https://api.whatsapp.com/send?phone=525586779112&text=Hola%20Ivan,%20tuve%20tu%20contacto%20por%20tu%20firma%20de%20correo,%20me%20gustar%C3%ADa%20platicar%20contigo"
+  url = "https://bit.ly/IjInnovaciones"
 
   constructor() { }
 

@@ -1,0 +1,51 @@
+.time-countdown{
+    background-color: black;
+    max-width: 80vw;
+    border-radius: 4rem;
+    -webkit-box-shadow: 0 0 6px 3px #1da8c5;
+        box-shadow: 0 0  6px 3px #1da8c5;
+    /* box-shadow: #1da8c5 0px 3px 5px;  */
+}
+
+.numbers{
+    font-family: 'Changa', sans-serif;
+    font-weight: 300;
+    padding: 1em;
+    font-size: 2rem;
+    color: red;
+    /* text-shadow: 1px 1px 1px #f44b4b, 2px 2px 3px #ef8888, 3px 3px 5px white; */
+    text-shadow: 2px 2px 4px #ef8888;
+    
+    
+}
+.mobile{
+    display: none;
+}
+@media (max-width: 800px) {
+    .time-countdown{
+        border-radius: 0px;
+        min-width: 100%;
+        max-width: 100%;
+        box-shadow: #1da8c5 0px 3px 5px;
+    }
+    .numbers{
+        padding: 1.8rem;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .letter{
+        margin-left: 0.5rem;
+    }
+}
+@media (max-width: 390px) {
+    .time-countdown{
+        border-radius: 0px;
+        min-width: 100vw;
+        max-width: 100vw;
+        box-shadow: #1da8c5 0px 3px 5px;
+    }
+}
