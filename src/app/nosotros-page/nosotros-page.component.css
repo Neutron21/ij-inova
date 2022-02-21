@@ -5,7 +5,6 @@ p {
     border-radius: 30px;
     text-align: center;
     padding: 1rem;
-    /* border-color: #20dad8; */
     border-color: #1da8c5;
     border-width: 5px;
     border-style: outset;
@@ -25,6 +24,7 @@ p {
     background-color: azure;
     color: #123f54;
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 .container-2{
     background-color: #123f54;
@@ -33,10 +33,15 @@ p {
     min-height: 4rem;
 }
 .background{
-    /* background-image: url('../../assets/back2.JPG'); */
-    background-repeat: none;
+    background-image: url('../../assets/finance-money-debt-credit-balance-concept.jpg');
+    opacity: 0.15;
+    width: 100%;
+    padding: 11.5rem;
+    background-repeat: no-repeat;
+    /* position: absolute; */
     background-size: 100%;
 }
+
 .gx-5{
     height: 11rem;
     margin-top: 1rem;
@@ -44,6 +49,19 @@ p {
 .azure{
     color: azure;
 }
+.carousel{
+    width: 55%;
+}
+.carousel-inner{
+    padding-top: 1.5rem;
+} 
+#space{
+    padding: 1rem;
+}
+.img1{
+    border-radius: 10px;
+}
+
 @media (max-width: 800px) {
 	.pad-aux{
         padding-top: 0rem;
@@ -61,4 +79,15 @@ p {
    .container-3{
        margin-top: -1em;
    }
+   .carousel{
+    width: 100%;
+    }
+    .carousel-inner{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }   
+    .background{
+        padding: 6rem;
+    }
+  
 }

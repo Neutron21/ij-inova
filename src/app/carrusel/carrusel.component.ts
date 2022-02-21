@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { GeneralValuesServices } from '../services/general_values.services';
 
 @Component({
@@ -10,6 +10,7 @@ export class CarruselComponent implements OnInit {
 
   labels: String[] = [];
   idiom: String = "es";
+
   constructor(
     private _generalValuesServices: GeneralValuesServices
   ) { 
@@ -22,6 +23,7 @@ export class CarruselComponent implements OnInit {
 
   ngOnInit(): void {
     this.getLanguage(this.idiom)
+    
   }
 
   getLanguage(lenguaje){
