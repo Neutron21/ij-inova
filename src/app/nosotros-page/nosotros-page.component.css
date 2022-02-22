@@ -34,12 +34,13 @@ p {
 }
 .background{
     background-image: url('../../assets/finance-money-debt-credit-balance-concept.jpg');
-    opacity: 0.15;
+    opacity: 0.5;
     width: 100%;
     padding: 11.5rem;
     background-repeat: no-repeat;
     /* position: absolute; */
     background-size: 100%;
+    margin-bottom: 1rem;
 }
 
 .gx-5{
@@ -88,6 +89,9 @@ p {
     }   
     .background{
         padding: 6rem;
+        margin-bottom: 0.3rem;
     }
-  
+    .container-2{
+        min-height: 4.5rem;
+    }
 }

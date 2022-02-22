@@ -9,7 +9,7 @@ import { GeneralValuesServices } from '../services/general_values.services';
 })
 export class CountdownComponent implements OnInit {
   labels: String[] = [];
-  idiom: String = "es";
+  idiom: String;
 
   _second = 1000;
   _minute = this._second * 60;
@@ -35,7 +35,7 @@ export class CountdownComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getLanguage(this.idiom);
+    this.getLanguage(this._generalValuesServices.getIdiom());
     this.clock = this.source.subscribe(t => {
       this.now = new Date();
       this.end = new Date('01/01/' + (this.now.getFullYear() + 1) +' 00:00');
@@ -51,7 +51,6 @@ export class CountdownComponent implements OnInit {
     this.seconds = Math.floor((distance % this._minute) / this._second);
   }
   getLanguage(lenguaje){
-    
     this.labels = this._generalValuesServices.getLabels("countdown",lenguaje);   
   }
 }

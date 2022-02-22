@@ -9,7 +9,7 @@ import { GeneralValuesServices } from '../services/general_values.services';
 export class PiedraPapelTijeraComponent implements OnInit,OnChanges {
 
   labels: String[] = [];
-  idiom: String = "es";
+  idiom: String;
 
   number1: number = 0;
   number2: number = 0;
@@ -37,7 +37,7 @@ export class PiedraPapelTijeraComponent implements OnInit,OnChanges {
   }
 
   ngOnInit(): void {
-    this.getLanguage(this.idiom);   
+    this.getLanguage(this._generalValuesServices.getIdiom());   
   }
   ngOnChanges(changes: SimpleChanges): void {
     console.log('changes', changes);

@@ -2,8 +2,6 @@ import { EventEmitter, Injectable } from "@angular/core";
 import es from '../../assets/language/language_es.json';
 import en from '../../assets/language/language_en.json';
 
-
-
 @Injectable({
     providedIn: 'root'
 })
@@ -11,9 +9,16 @@ import en from '../../assets/language/language_en.json';
 export class GeneralValuesServices{
 
     language$: EventEmitter<string> = new EventEmitter<string>();
-    
+    idiom: String = "es";
+
     constructor(){  }
 
+    setIdiom(language: String){
+        this.idiom = language;
+    }
+    getIdiom(){
+        return this.idiom;
+    }
     getLabels(component: any, idioma: any){
         let labelsCmpt :String[] = [];
         

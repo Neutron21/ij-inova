@@ -10,7 +10,7 @@ import { GeneralValuesServices } from '../services/general_values.services';
 export class QrComponent implements OnInit, OnChanges {
 
   labels: String[] = [];
-  idiom: String = "es";
+  idiom: String;
   constructor(
     private _generalValuesServices: GeneralValuesServices
   ) { 
@@ -22,7 +22,7 @@ export class QrComponent implements OnInit, OnChanges {
   }
   
   ngOnInit(): void {
-    this.getLanguage(this.idiom);    
+    this.getLanguage(this._generalValuesServices.getIdiom());    
    
   }
   ngOnChanges(changes: SimpleChanges): void {

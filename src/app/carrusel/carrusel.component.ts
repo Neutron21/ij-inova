@@ -9,25 +9,22 @@ import { GeneralValuesServices } from '../services/general_values.services';
 export class CarruselComponent implements OnInit {
 
   labels: String[] = [];
-  idiom: String = "es";
 
   constructor(
     private _generalValuesServices: GeneralValuesServices
   ) { 
     this._generalValuesServices.language$.subscribe( res => {
-      this.idiom = res;
-      console.log(this.idiom);
-      this.getLanguage(this.idiom)
+      let idiom = res;
+      this.getLanguage(idiom);
     })
   }
 
   ngOnInit(): void {
-    this.getLanguage(this.idiom)
+    this.getLanguage(this._generalValuesServices.getIdiom())
     
   }
 
   getLanguage(lenguaje){
-    
     this.labels = this._generalValuesServices.getLabels("carrusel",lenguaje);
   }
 }

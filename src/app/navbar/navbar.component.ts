@@ -31,6 +31,7 @@ export class NavbarComponent implements OnInit, OnChanges {
   }
   setLanguage(){
     this.labels = [];
+    this._generalValuesServices.setIdiom(this.idioma);
     if (this.idioma == 'es') {
         es.navbar.forEach(element => {
         this.labels.push(element);

@@ -9,7 +9,7 @@ import { GeneralValuesServices } from '../services/general_values.services';
 export class DiceComponent implements OnInit {
 
   labels: String[] = [];
-  idiom: String = "es";
+  idiom: String;
 
   title = 'ij-inova';
   dado1: any = 0;
@@ -36,7 +36,7 @@ export class DiceComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getLanguage(this.idiom);
+    this.getLanguage(this._generalValuesServices.getIdiom());
   }
 
   throwDice(){

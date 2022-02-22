@@ -9,7 +9,7 @@ import { GeneralValuesServices } from '../services/general_values.services';
 export class MapsComponent implements OnInit {
 
   labels: String[] = [];
-  idiom: String = "es";
+  idiom: String;
 
   constructor(
     private _generalValuesServices: GeneralValuesServices
@@ -22,7 +22,7 @@ export class MapsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getLanguage(this.idiom)
+    this.getLanguage(this._generalValuesServices.getIdiom())
   }
   getLanguage(lenguaje){ 
     this.labels = this._generalValuesServices.getLabels("maps",lenguaje);   
