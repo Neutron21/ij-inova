@@ -1,10 +1,5 @@
-.foot-back{
-    background-image: url("../../assets/background-digital.jpg");
-    background-size: auto;
-    background-position: 48rem;
-}
 .footer{
-    /* background-color: #12192a; */
+    background-color: #12192a;
     min-height: 9vh;;
 }
 .text-footer{

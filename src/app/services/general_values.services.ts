@@ -19,7 +19,7 @@ export class GeneralValuesServices{
     getIdiom(){
         return this.idiom;
     }
-    getLabels(component: any, idioma: any){
+    getLabels(component: string, idioma: string){
         let labelsCmpt :String[] = [];
         
         if (idioma == 'es') {
