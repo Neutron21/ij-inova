@@ -1,0 +1,53 @@
+.loader-gift{
+    width: 7rem;
+    border: 2px solid #dee2e6;
+    border-radius: 50%;
+    padding: 0.25rem;
+}
+.vs{
+    padding: 1rem;
+    font-weight: 800;
+    font-size: 3rem;
+    background: -webkit-linear-gradient(to right, #d3c63c, #cd4132); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d3c63c, #cd4132); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+.fondo {
+    margin: 1rem;
+    border-radius: 30%;
+    background-color: black;
+}
+.emoji-result {
+    font-size: 4.8em;
+    padding-top: 1rem;
+}
+.left{
+    padding-right: .5em;
+}
+.right{
+    padding-left: .5em;
+}
+.form-switch{
+    padding-left: 3em;    
+}
+.border{
+    border-width: medium;
+    border-radius: 30%;
+}
+.loader{
+    margin-top: 2em;
+}
+#ppt-compt{
+    height: 17em;
+}
+.btn-custom{
+    background-color: #1da8c5;
+    color: #12192a;
+    box-shadow: #12192a 1px 1px 3px;
+}
+.btn-custom:hover{
+    background-color: #20dad8;
+}

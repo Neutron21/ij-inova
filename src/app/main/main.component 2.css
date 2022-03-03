@@ -1,0 +1,61 @@
+ul{list-style:none;}
+
+li::before{
+	font-family:"Material Icons";
+	content:"\e5cc";
+	margin-right:8px;
+}
+p {
+    text-align: justify;
+}
+ol, p {
+    font-size: large;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+}
+.brand-name{
+    color: #1da8c5;
+}
+.sabias-img{
+	width: 60%;
+}
+.container{
+    background-color: azure;
+    color: #123f54;
+    min-height: 85vh;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#logo{
+	width: 100%;
+	height: auto;
+	border-radius: 15%;
+	
+	border-color: #1da8c5;
+    border-style: double;
+    border-width: thick;
+}
+.rounded-custom{
+	background-color: white;
+	border-radius: 1em;
+	border-color: #123f54;
+	border-width: 2px;
+	border-style: solid;
+	box-shadow: gray 3px 3px 3px;
+}
+.custom-img{
+	border-radius: 1em;
+	-webkit-box-shadow: 0 0 6px 3px gray;
+        box-shadow: 0 0  6px 3px gray;
+}
+@media (max-width: 760px) {
+	.sabias-img{
+		width: 100%;
+	}
+	.p-3{
+		padding: 1em 0px 1em 0px !important;
+	}
+	.custom-img{
+		width: 100%;
+	}
+}

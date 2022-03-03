@@ -1,0 +1,12 @@
+
+.qr-image{
+    max-width: 14em;
+    border-radius: 5px;
+    /* box-shadow: #1da8c5 3px 3px 6px; */
+    -webkit-box-shadow: 0 0 6px 3px #20dad8;
+        box-shadow: 0 0  6px 3px #20dad8;
+    
+}
+.azure{
+    color: azure;
+}

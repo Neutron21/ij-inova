@@ -1,0 +1,42 @@
+.cmpt-body{
+    min-height: 31rem;
+}
+.dice {
+    width: 15em;
+    border-radius: 30%;
+    border-width: medium;
+    padding: 1rem;
+    margin: 0.5rem;
+    /* box-shadow: #1da8c5 1px 1px 3px; */
+    -webkit-box-shadow: 0 0 3px 1px #1da8c5;
+        box-shadow: 0 0  3px 1px #1da8c5;
+}
+.dice-gift {
+    border-radius: 30%;
+    border-color: transparent;
+    
+}
+.numberValue{
+    color: #12192a;
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px #DEE2E6;
+}
+.img-thumbnail{
+    max-width: 45% !important;
+}
+.btn-custom{
+    background-color: #1da8c5;
+    color: #12192a;
+    box-shadow: #12192a 1px 1px 3px;
+}
+.btn-custom:hover{
+    background-color: #20dad8;
+}
+.imgs{
+    min-height: 10rem;
+}
+@media (max-width: 760px) {
+    .cmpt-body{
+        min-height: 25.5rem;
+    }
+}

@@ -1,0 +1,14 @@
+.img1{
+    height: 29em;
+}
+.carousel{
+    width: 50%;
+}
+.font-black{
+    color: black;
+}
+@media (max-width: 760px) {
+    .carousel{
+        width: 95%;
+    }   
+}
