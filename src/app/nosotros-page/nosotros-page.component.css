@@ -1,6 +1,12 @@
 p {
     text-align: justify;
 }
+
+ol, p, h5 {
+    font-size: large;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+}
 .valores{
     border-radius: 30px;
     text-align: center;
@@ -8,12 +14,10 @@ p {
     border-color: #1da8c5;
     border-width: 5px;
     border-style: outset;
+    font-size: larger;
 }
-.val-1{
-    background-color: transparent;
-    color: #123f54;
-}
-.val-2{
+
+.val{
     background-color: #12192a;
     color:#20dad8;
 }
@@ -29,7 +33,6 @@ p {
 .container-2{
     background-color: #123f54;
     color: #20dad8;
-    /* padding-top: 1em; */
     min-height: 4rem;
 }
 .background{
@@ -38,11 +41,10 @@ p {
     width: 100%;
     padding: 11.5rem;
     background-repeat: no-repeat;
-    /* position: absolute; */
     background-size: 100%;
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
-
 .gx-5{
     height: 11rem;
     margin-top: 1rem;
@@ -64,6 +66,7 @@ p {
 }
 
 @media (max-width: 800px) {
+   
 	.pad-aux{
         padding-top: 0rem;
     }
@@ -88,8 +91,9 @@ p {
         padding-bottom: 1rem;
     }   
     .background{
-        padding: 6rem;
-        margin-bottom: 0.3rem;
+        padding: 5rem;
+        margin-bottom: 0.9rem;
+        
     }
     .container-2{
         min-height: 4.5rem;

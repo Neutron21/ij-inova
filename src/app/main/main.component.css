@@ -8,6 +8,11 @@ li::before{
 p {
     text-align: justify;
 }
+ol, p {
+    font-size: large;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+}
 .brand-name{
     color: #1da8c5;
 }
@@ -25,6 +30,10 @@ p {
 	width: 100%;
 	height: auto;
 	border-radius: 15%;
+	
+	border-color: #1da8c5;
+    border-style: double;
+    border-width: thick;
 }
 .rounded-custom{
 	background-color: white;
@@ -34,7 +43,11 @@ p {
 	border-style: solid;
 	box-shadow: gray 3px 3px 3px;
 }
-
+.custom-img{
+	border-radius: 1em;
+	-webkit-box-shadow: 0 0 6px 3px gray;
+        box-shadow: 0 0  6px 3px gray;
+}
 @media (max-width: 760px) {
 	.sabias-img{
 		width: 100%;
@@ -42,7 +55,7 @@ p {
 	.p-3{
 		padding: 1em 0px 1em 0px !important;
 	}
-	/* #logo{
-		width: 80%;
-	} */
+	.custom-img{
+		width: 100%;
+	}
 }

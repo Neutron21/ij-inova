@@ -3,8 +3,10 @@
     /* background-color: #12192a; */
     background-color: #146d89;
 }
-h2, h4{
+h1, h2, h3, h4{
     color: #146d89;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
 .vignete{
     width: 0.9em;

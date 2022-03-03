@@ -25,8 +25,8 @@
         "Ven y prueba la especialidad de la casa"
     ],
     "p-p-t": [
-        "Piedra, papel o tijera 👊🏼 ✋🏼 ✌🏼",
-        "Juagalo con un amigo o contra el CPU",
+        "Piedra, papel ó tijera 👊🏼 ✋🏼 ✌🏼",
+        "Juegalo con un amigo ó contra el CPU",
         "Un Jugador",
         "Dos Jugadores",
         "Jugar",
@@ -45,7 +45,7 @@
         "Perdiste"
     ],
     "dice": [
-        "Lanza los datos",
+        "Lanza los dados",
         "Prueba tu suerte"
     ],
     "you-tube": [
@@ -56,7 +56,7 @@
     ],
     "maps": [
         "Mapa",
-        "Agrega la ubicación de tu negocio, para obtener mas clientes"
+        "Agregamos tu negocio a Google Maps. Muestra tu ubicación a tus clientes desde tu sitio web, para obtener mayor impacto"
     ],
     "countdown": [
         "Cuenta regresiva",
@@ -80,6 +80,7 @@
         "Compromiso",
         "Calidad",
         "Satisfacción al cliente",
+        "Claridad",
         "Innovación",
         "Preguntas frecuentes",
         "¿Porque debería contratar sus servicios?",
@@ -99,7 +100,7 @@
     "servicios":[
         "Servicios",
         "¿Qué servicios ofrecen?",
-        "Desarrollo y mantenimiento de paginas web.",
+        "Desarrollo y mantenimiento de páginas web.",
         "Redes sociales para negocios.",
         "Creación de contenido.",
         "Creación de marca y posicionamiento.",
