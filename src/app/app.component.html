@@ -1,6 +1,11 @@
 <app-navbar [idioma]="idioma"></app-navbar>
 <div class="aux"></div>
-<router-outlet></router-outlet>
+<div *ngIf="loader" class="container">
+    <div  class="d-flex justify-content-center loader">
+        <img src="../../assets/main-loader.svg" class="loader-gift" alt="loader"/>
+    </div>
+</div>
+<router-outlet *ngIf="!loader"></router-outlet>
 <!-- Next Steps -->
 <!-- Footer -->
 <app-footer></app-footer>

@@ -7,6 +7,9 @@
     min-height: 85vh;
     padding-top: 1em;
 }
+.loader{
+    margin-top: 25vh;
+}
 
 /* Paleta de colores */
 .color1 {color: #12192a;}

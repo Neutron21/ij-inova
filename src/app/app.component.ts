@@ -10,18 +10,27 @@ import { GeneralValuesServices } from './services/general_values.services';
 export class AppComponent {
   title = 'ij-inova';
   idioma = "es"
+  loader = false;
   
   constructor(
     private _generalValuesServices: GeneralValuesServices
   ){ 
+    
     this._generalValuesServices.language$.subscribe(res => {
+      this.loader = true;
       this.idioma = res;
+      setTimeout(() => {
+        this.loader = false;
+      }, 1500);
       
     })
   }
 
   ngOnInit(){
-    
+    this.loader = true;
+    setTimeout(() => {
+      this.loader = false;
+    }, 1500);
   }  
   
 }
